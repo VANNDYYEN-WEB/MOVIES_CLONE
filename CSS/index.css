@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Old+South+Arabian&family=Tauri&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 428px) 
+{
+    .content-nav1 .search-nav,
+    .content-nav1 .btn-ticket,
+    .content-nav1 .btn-bell,
+    .content-nav1 .btn-flag 
+    {
+        display: none; /* Hide all elements within the navigation except for the logo */
+    }
+    .conten-logo
+    {
+        display: block;
+        height: auto;
+        margin-left: 140px;
+   } 
+   .nav2 .cine,
+   .nav2 .btn-cinemas,
+   .nav2 .fb ,
+   .nav2 .btn-FB
+   {
+       display: none;
+   }
+   .subtitle h1 {
+    font-size: 20px;
+    background-color: brown;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+/* Style for h2 and p tags within .subtitle */
+.subtitle p {
+    font-size: 10px; /* Adjust the font size as needed */
+}
+}
+@media screen and (max-width: 480px) 
+{
+     .content-nav1 .search-nav,
+     .content-nav1 .btn-ticket,
+     .content-nav1 .btn-bell,
+     .content-nav1 .btn-flag 
+     {
+         display: none; /* Hide all elements within the navigation except for the logo */
+     }
+     .conten-logo
+     {
+         display: block;
+         height: auto;
+         margin-left: 140px;
+ 
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .content-nav1 .btn-ticket,
+    .content-nav1 .btn-bell,
+    .content-nav1 .btn-flag 
+    {
+        display: none; /* Hide all elements within the navigation except for the logo */
+    }
+    .conten-logo
+    {
+        display: block;
+        height: auto;
+
+    }
+
+    .nav2 .cine,
+    .nav2 .btn-cinemas {
+        display: none;
+    }
+}
+.container-widht
+{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+body 
+{
+    background-color: rgb(22, 21, 21);
+}
+/* Nav bar */
+.top-page
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.201); 
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.Nav-1 
+{
+    padding: 20px 20px;
+    width: 100%;
+    height: 60%;
+}
+
+.Nav-2 
+{
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid white;
+}
+
+/* Nav1 */
+.nav1
+{
+    justify-content: space-between;
+    display: flex;
+}
+.search-nav
+{
+    padding-top:10px ;
+    padding-bottom: 10px;
+    width: 235px;
+    height:39px;
+    background-color: rgba(102, 100, 100, 0.229);
+    border: 0.5px solid rgb(193, 190, 190); 
+    border-radius: 28px;
+    align-items: center;
+}
+.search-nav input
+{
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 15px;
+    width: 180px;
+}
+.search-nav input::placeholder
+{
+  color:rgb(211, 204, 204);
+  font-family: inherit;
+
+}
+.icon-search
+{
+    font-size: 18px;
+    margin-right: 5px;
+    color:rgb(211, 204, 204);
+    cursor: pointer; 
+}
+.logo-nav
+{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.btn-ticket
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 39px;
+    background-color: rgba(102, 100, 100, 0.229);
+    color:white;
+    text-decoration: none;
+    border-radius: 20px;  
+    margin-left:10px ;  
+}
+.btn-ticket .ticket{
+    margin-right: 10px;
+}
+.btn-bell
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    color: white;
+    background-color: rgba(102, 100, 100, 0.229);
+    text-decoration: none;
+    border-radius: 50px;  
+    margin-left:10px ;  
+}
+.btn-flag
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    text-decoration: none;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.btn-flag img{
+    object-fit: cover;
+    width: 90%;
+    height: auto;
+
+}
+/* End of nav1 */
+
+/* Nave 2 */
+.nav2
+{
+    justify-content: space-between;
+    display: flex;
+    padding-top: 10px;
+}
+.btn-home,.btn-cinemas,.btn-offers,.btn-FB,.btn-location
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 39px;
+    color:white;
+    text-decoration: none;
+    border-radius: 20px;  
+}
+.btn-home .home,.offer,.fb,.cinema
+{
+    margin-right: 10px;
+}
+/* end of nav 2 */
+
+/* end of nav  */
+
+/* slide */
+
+.background-slide
+{
+    max-width: 100%; 
+    height: auto; 
+}
+.content-slide 
+{
+    max-width: 100%; 
+    height: auto;
+    margin-top: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.content-img 
+{
+    display: flex;
+    transition: transform 0.9s ease; /* Transition effect */
+}
+
+.slide-img
+ {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+/* end of slide */
+
+/* subtitle */
+.subtitle
+{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 10PX;
+}
+.subtitle h1,p,h2
+{
+    margin-left: 10px;
+}
+.subtitle p
+{
+    font-size: 35px;
+    color: rgb(143, 143, 143);
+}
+.subtitle h1
+{
+    font-family:'Times New Roman', Times, serif;
+}
+/* end of subtitle */
+
+/* date for boxing */
+.date-and-time
+{
+    
+    top: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent items from wrapping onto new lines */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    width: 100%;
+    height: 100px;/* Add padding to prevent items from sticking to the edge */
+    flex-direction: row; /* Set direction to horizontal */
+    scrollbar-width: none;
+}
+
+.content-date
+ {
+    width: 150px;
+    height: 80px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    margin-right: 20px; /* Add spacing between each content item */
+    margin-left: 20px; /* Add margin to the left of the first item */
+    flex: 0 0 auto; /* Prevent items from stretching to fill the container */
+}
+.content-date:hover
+{
+    border: 1px solid white;
+}
+.content-date p,h1
+{
+    color: white;
+    display: grid;
+    text-align: center;
+    line-height: 23px;
+    margin-top:3px;
+}
+.content-date p
+{
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgba(169, 165, 165, 0.795);
+    margin-right: 10px;
+}
+/* end of date */
+
+.gird-1x3
+{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.Course-card
+{
+    border-radius:20px ;
+    width: 180px;
+    height: 380px;
+    overflow: hidden;
+    margin: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+.Course-card:hover
+{
+    transform: scale(1.1,1.1);
+}
+/* .gird-1x3:hover >.Course-card:not(:hover)
+{
+    filter: blur(10px);
+    transform: scale(0.9,0.9);
+} */
+.Cousrs-image
+{
+    width: 100%;
+}
+.Cousrs-image >img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    /* rotate: 10deg; */
+}
+.name
+{
+    font-size: 1.1rem;
+    color: rgba(174, 174, 174, 0.599);
+    margin-top:10px;
+}
+.name span
+{
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    padding:0px 10px ;
+    margin-left:10px ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.position
+{
+    font-size: 1.2rem;
+    line-height:3rem;
+    color: aliceblue;
+    font-family: Kh Koulen;
+}
+
